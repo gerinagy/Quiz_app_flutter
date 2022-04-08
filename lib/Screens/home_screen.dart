@@ -39,6 +39,13 @@ class HomeScreen extends StatelessWidget {
                     return const QuizScreen();
                   })),
                 },
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
                 child: const Text('Start Game'),
               ),
             ],
