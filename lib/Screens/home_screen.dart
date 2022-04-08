@@ -19,13 +19,29 @@ class HomeScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Center(
-          child: ElevatedButton(
-            onPressed: () => {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const QuizScreen();
-              })),
-            },
-            child: const Text('Start Game'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(20),
+                child: Text(
+                  'Quiz App',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () => {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const QuizScreen();
+                  })),
+                },
+                child: const Text('Start Game'),
+              ),
+            ],
           ),
         ),
       ),
