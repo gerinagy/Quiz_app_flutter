@@ -11,8 +11,7 @@ class HomeScreen extends StatelessWidget {
     return DecoratedBox(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(
-              "/Users/Geri/Coding/Projects/Flutter/quiz_app/lib/assets/quiz.jpg"),
+          image: AssetImage("assets/quiz.jpg"),
           fit: BoxFit.cover,
         ),
       ),
